@@ -9,4 +9,8 @@ public interface StudentService {
     List<Student> getAllStudents();
 
 
+    Student getStudentById(Long id);
+    Student updateStudent(Student student);
+    void deleteStudentById(Long id);
+
 }

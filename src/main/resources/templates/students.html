@@ -25,6 +25,11 @@
                 <td th:text="${student.firstName}" class="text-center"></td>
                 <td th:text="${student.lastName}" class="text-center"></td>
                 <td th:text="${student.email}" class="text-center"></td>
+                <td>
+                    <a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Update</a>
+
+                    <a th:href="@{/students/{id}(id=${student.id})}" class="btn btn-outline-danger">Delete</a>
+                </td>
             </tr>
             </tbody>
         </table>
