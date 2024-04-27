@@ -18,8 +18,6 @@ public class StudentServiceImpl implements StudentService {
     public List<Student> getAllStudents() {
         return studentRepository.findAll();
     }
-<<<<<<< HEAD
-=======
 
     @Override
     public Student saveStudent(Student student) {
@@ -40,7 +38,4 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudentById(Long id) {
         studentRepository.deleteById(id);
     }
-
-
->>>>>>> 11b97d6 (implement update student feature)
 }

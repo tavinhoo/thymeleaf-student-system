@@ -1,16 +1,14 @@
 package com.example.studentmanagementsystem.controllers;
 
+import com.example.studentmanagementsystem.model.entities.Student;
 import com.example.studentmanagementsystem.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-<<<<<<< HEAD
 import org.springframework.web.bind.annotation.GetMapping;
-=======
-import org.springframework.web.bind.annotation.*;
->>>>>>> 11b97d6 (implement update student feature)
-
-import java.util.List;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class StudentController {
@@ -24,8 +22,6 @@ public class StudentController {
         return "students";
     }
 
-<<<<<<< HEAD
-=======
     @GetMapping("/students/new")
     public String createStudentForm(Model model) {
         Student student = new Student();
@@ -62,5 +58,4 @@ public class StudentController {
         studentService.deleteStudentById(id);
         return "redirect:/students";
     }
->>>>>>> 11b97d6 (implement update student feature)
 }
